@@ -18,6 +18,11 @@
 - Clown the project on your computer and open the `index.html` file in your browser.
 - You can change the dataset by copying one from `data` folder and replacing the default one in `shipment.js` file at line 2
 
+## Preview
+- ![Desktop](Screenshot_1.png)
+- ![Tablet](Screenshot_2.png)
+- ![Mobile](Screenshot_3.png)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
