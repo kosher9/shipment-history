@@ -401,9 +401,7 @@ const data = [
   }
 ]
 
-
-
-console.log(moment())
+let date = ""
 
 const renderArrived = function (item) {
   if (item.shipment.satus?.shipmentIsDelayed) {
@@ -471,14 +469,30 @@ const renderTimeline = function (item) {
   }
 };
 
+const renderDate = function (item){
+  if(date !== moment(item.eventDateTime).format('MMMM Do')){
+    date = moment(item.eventDateTime).format('MMMM Do')
+    return `
+      <h3 class="date">${moment(item.eventDateTime).format('MMMM Do')}</h3>
+      <h3 class="hour">${moment(item.eventDateTime).format('h:mm a')}</h3>
+    `
+  }else {
+    date = moment(item.eventDateTime).format('MMMM Do')
+    return `
+      <h3 class="date"></h3>
+      <h3 class="hour">${moment(item.eventDateTime).format('h:mm a')}</h3>
+    `
+  }
+
+}
+
 function createDom() {
   const timelineCtn = document.querySelector('.timeline-ctn')
   timelineCtn.innerHTML = ''
   data.forEach((item) => {
     const timeline = `<div class="timeline">
             <div class="date-ctn">
-                <h3 class="date">April 22nd</h3>
-                <h3 class="hour">10:32am</h3>
+                ${renderDate(item)}
             </div>
             <div class="sep">
                 ${renderTimeline(item)}
