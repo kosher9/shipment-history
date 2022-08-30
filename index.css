@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.timeline-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 23px;
+    padding: 0 50px;
+}
+
+.date-ctn {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-ctn h3 {
+    text-align: right;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.date-ctn .date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C355E;
+    margin-top: 0;
+}
+
+.date-ctn .hour{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 0;
+}
+
+.details-ctn {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.status{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1C355E;
+    margin-top: 0;
+}
+
+.comment{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #696F77;
+    margin-top: 0;
+}
+
+.state-info{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 0;
+}
+
+.sep{
+    display: flex;
+    flex-direction: column;
+}
+.point{
+    height: 100%;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.point::after{
+    content: '';
+    width: 5px;
+    height: 88%;
+    display: block;
+    margin: auto;
+    background-color: #428BCA;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 744px) {
+    .date-ctn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .details-ctn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .history-ctn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .title {
+        margin-top: 51px;
+        margin-left: 100px;
+    }
+}
