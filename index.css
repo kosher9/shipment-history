@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --blue-soft: #428BCA;
+    --orange-soft: #F6A800;
+    --red-soft: #D43B1A;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.title{
+    margin-left: 20px;
+}
+.history-ctn {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
 .timeline-ctn {
+    padding: 0;
+}
+
+.timeline {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 23px;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .date-ctn {
@@ -31,7 +48,7 @@ body {
     margin-top: 0;
 }
 
-.date-ctn .hour{
+.date-ctn .hour {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -41,6 +58,7 @@ body {
 
 .details-ctn {
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -49,7 +67,7 @@ body {
     flex-direction: column;
 }
 
-.status{
+.status {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -58,7 +76,7 @@ body {
     margin-top: 0;
 }
 
-.comment{
+.comment {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -67,7 +85,9 @@ body {
     margin-top: 0;
 }
 
-.state-info{
+.state-info {
+    display: inline-block;
+    white-space: nowrap;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -76,27 +96,123 @@ body {
     margin-top: 0;
 }
 
-.sep{
+.sep {
+    width: 36px;
     display: flex;
     flex-direction: column;
 }
-.point{
+
+.point {
     height: 100%;
     align-self: center;
-    margin-top: 0;
-    margin-bottom: 4px;
+    margin: 0 auto 4px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
 }
-.point::after{
+
+.point-orange {
+    height: 100%;
+    align-self: center;
+    margin: 0 auto 4px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.point-red {
+    height: 100%;
+    align-self: center;
+    margin: 0 auto 4px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.point::after {
     content: '';
-    width: 5px;
+    width: 3px;
     height: 88%;
     display: block;
     margin: auto;
-    background-color: #428BCA;
+    background-color: var(--blue-soft);
     border-radius: 20px;
 }
 
+.point-orange::after {
+    content: '';
+    width: 3px;
+    height: 88%;
+    display: block;
+    margin: auto;
+    background-color: var(--orange-soft);
+    border-radius: 20px;
+}
+.point-red::after {
+    content: '';
+    width: 3px;
+    height: 88%;
+    display: block;
+    margin: auto;
+    background-color: var(--red-soft);
+    border-radius: 20px;
+}
+
+.check{
+    width: 36px;
+    height: 36px;
+    color: var(--blue-soft);
+}
+.map-ctn{
+    margin: 0;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border: 3px solid var(--blue-soft) ;
+    display: flex;
+    justify-content: center;
+}
+.map{
+    width: 15px;
+    height: 21px;
+    align-self: center;
+    color: var(--blue-soft);
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background: var(--blue-soft);
+    align-self: center;
+    border-radius: 50%
+}
+
+.dot-orange{
+    width: 10px;
+    height: 10px;
+    background: var(--orange-soft);
+    align-self: center;
+    border-radius: 50%
+}
+.dot-red{
+    width: 10px;
+    height: 10px;
+    background: var(--red-soft);
+    align-self: center;
+    border-radius: 50%
+}
+
 @media only screen and (min-width: 744px) {
+    .title{
+        margin-left: 40px;
+    }
+    .timeline {
+        padding: 0 40px;
+    }
+
     .date-ctn {
         display: flex;
         flex-direction: row;
