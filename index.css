@@ -105,6 +105,7 @@ body {
 
 .state-info {
   display: inline-block;
+  white-space: nowrap;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

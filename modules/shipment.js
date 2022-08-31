@@ -1,6 +1,6 @@
-// You can change the content of data
 let data = []
 
+// You can change the dataset by putting the path to your data here
 fetch('../data/shipment2.json')
   .then(response => response.json())
   .then(d => {
@@ -128,8 +128,6 @@ function createDom() {
   const moreTextsButtons = timelineCtn.querySelectorAll('.myBtn')
   moreTextsButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
-      console.log(button)
-      console.log(e.path[1].getElementsByClassName('dots'))
       let dots = e.path[1].getElementsByClassName('dots')[0];
       let moreText = e.path[1].getElementsByClassName('more')[0];
       let btnText = e.path[1].getElementsByClassName('myBtn')[0];
