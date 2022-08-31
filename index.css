@@ -1,265 +1,265 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --blue-soft: #428BCA;
-    --orange-soft: #F6A800;
-    --red-soft: #D43B1A;
+  --blue-soft: #428bca;
+  --orange-soft: #f6a800;
+  --red-soft: #d43b1a;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .more {
-    display: none;
-    border: none;
+  display: none;
+  border: none;
 }
 
-.myBtn{
-    background: none;
-    border: none;
-    margin-left: 3px;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+.myBtn {
+  background: none;
+  border: none;
+  margin-left: 3px;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .title {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .history-ctn {
-    height: 100vh;
-    overflow-y: scroll;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .timeline-ctn {
-    padding: 0;
+  padding: 0;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 23px;
-    padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 23px;
+  padding: 0 20px;
 }
 
 .date-ctn {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .date-ctn h3 {
-    text-align: right;
-    display: inline-block;
-    white-space: nowrap;
+  text-align: right;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .date-ctn .date {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #1C355E;
-    margin-top: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1c355e;
+  margin-top: 0;
 }
 
 .date-ctn .hour {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 0;
 }
 
 .details-ctn {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .detail {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .status {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #1C355E;
-    margin-top: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c355e;
+  margin-top: 0;
 }
 
 .comment {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #696F77;
-    margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #696f77;
+  margin-top: 0;
 }
 
 .state-info {
-    display: inline-block;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-top: 0;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-top: 0;
 }
 
 .sep {
-    width: 36px;
-    display: flex;
-    flex-direction: column;
+  width: 36px;
+  display: flex;
+  flex-direction: column;
 }
 
 .point {
-    height: 100%;
-    align-self: center;
-    margin: 0 auto 4px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+  height: 100%;
+  align-self: center;
+  margin: 0 auto 4px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
 }
 
 .point-orange {
-    height: 100%;
-    align-self: center;
-    margin: 0 auto 4px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+  height: 100%;
+  align-self: center;
+  margin: 0 auto 4px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
 }
 
 .point-red {
-    height: 100%;
-    align-self: center;
-    margin: 0 auto 4px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+  height: 100%;
+  align-self: center;
+  margin: 0 auto 4px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
 }
 
 .point::after {
-    content: '';
-    width: 3px;
-    height: 88%;
-    display: block;
-    margin: auto;
-    background-color: var(--blue-soft);
-    border-radius: 20px;
+  content: '';
+  width: 3px;
+  height: 88%;
+  display: block;
+  margin: auto;
+  background-color: var(--blue-soft);
+  border-radius: 20px;
 }
 
 .point-orange::after {
-    content: '';
-    width: 3px;
-    height: 88%;
-    display: block;
-    margin: auto;
-    background-color: var(--orange-soft);
-    border-radius: 20px;
+  content: '';
+  width: 3px;
+  height: 88%;
+  display: block;
+  margin: auto;
+  background-color: var(--orange-soft);
+  border-radius: 20px;
 }
 
 .point-red::after {
-    content: '';
-    width: 3px;
-    height: 88%;
-    display: block;
-    margin: auto;
-    background-color: var(--red-soft);
-    border-radius: 20px;
+  content: '';
+  width: 3px;
+  height: 88%;
+  display: block;
+  margin: auto;
+  background-color: var(--red-soft);
+  border-radius: 20px;
 }
 
 .check {
-    width: 36px;
-    height: 36px;
-    color: var(--blue-soft);
+  width: 36px;
+  height: 36px;
+  color: var(--blue-soft);
 }
 
 .map-ctn {
-    margin: 0;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    background: #fff;
-    border: 3px solid var(--blue-soft);
-    display: flex;
-    justify-content: center;
+  margin: 0;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border: 3px solid var(--blue-soft);
+  display: flex;
+  justify-content: center;
 }
 
 .map {
-    width: 15px;
-    height: 21px;
-    align-self: center;
-    color: var(--blue-soft);
+  width: 15px;
+  height: 21px;
+  align-self: center;
+  color: var(--blue-soft);
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    background: var(--blue-soft);
-    align-self: center;
-    border-radius: 50%
+  width: 10px;
+  height: 10px;
+  background: var(--blue-soft);
+  align-self: center;
+  border-radius: 50%;
 }
 
 .dot-orange {
-    width: 10px;
-    height: 10px;
-    background: var(--orange-soft);
-    align-self: center;
-    border-radius: 50%
+  width: 10px;
+  height: 10px;
+  background: var(--orange-soft);
+  align-self: center;
+  border-radius: 50%;
 }
 
 .dot-red {
-    width: 10px;
-    height: 10px;
-    background: var(--red-soft);
-    align-self: center;
-    border-radius: 50%
+  width: 10px;
+  height: 10px;
+  background: var(--red-soft);
+  align-self: center;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 744px) {
-    .title {
-        margin-left: 40px;
-    }
+  .title {
+    margin-left: 40px;
+  }
 
-    .timeline {
-        padding: 0 40px;
-    }
+  .timeline {
+    padding: 0 40px;
+  }
 
-    .date-ctn {
-        flex: 0.5;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 25px;
-    }
+  .date-ctn {
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+  }
 
-    .details-ctn {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 25px;
-    }
+  .details-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .history-ctn {
-        display: flex;
-        flex-direction: row;
-    }
+  .history-ctn {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .title {
-        margin-top: 51px;
-        margin-left: 100px;
-    }
+  .title {
+    margin-top: 51px;
+    margin-left: 100px;
+  }
 }

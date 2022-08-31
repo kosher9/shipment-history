@@ -16,7 +16,7 @@
 ## How to run the app
 
 - Clown the project on your computer, run `npm install` and open the `index.html` file in your browser.
-- You can change the dataset by copying one from `data` folder and replacing the default one in `shipment.js` file at line 2
+- If you want to change the dataset, go to `modules/shipment.js` and inside the fetch function put your json file path.
 
 ## Preview
 - ![Desktop](Screenshot_1.png)
